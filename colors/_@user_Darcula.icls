@@ -1,0 +1,12 @@
+<scheme name="_@user_Darcula" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.25" />
+  <metaInfo>
+    <property name="created">2018-05-10T10:00:41</property>
+    <property name="ide">AndroidStudio</property>
+    <property name="ideVersion">3.1.2.0</property>
+    <property name="modified">2018-05-10T10:14:03</property>
+    <property name="originalScheme">Darcula</property>
+  </metaInfo>
+  <option name="CONSOLE_FONT_NAME" value="Monospaced" />
+  <option name="CONSOLE_FONT_SIZE" value="15" />
+</scheme>
