@@ -1,0 +1,7 @@
+<keymap version="1" name="Default copy" parent="$default">
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt delete" />
+  </action>
+  <action id="SafeDelete" />
+  <action id="UsageView.Remove" />
+</keymap>
