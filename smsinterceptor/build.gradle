@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'smsinterceptor'   // Has to be same as your library module name
+
+    publishedGroupId = 'com.github.vitalibov'
+    libraryName = 'SmsInterceptor'
+    artifact = 'smsinterceptor'     // Has to be same as your library module name
+
+    libraryDescription = 'A library that allows you to intercept incoming SMS messages'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/VitaliBov/SmsInterceptor'
+    gitUrl = 'https://github.com/VitaliBov/SmsInterceptor.git'
+    githubRepository= 'VitaliBov/SmsInterceptor'
+
+    libraryVersion = '1.0'
+
+    developerId = 'vitalibov'
+    developerName = 'Vitali Bovkunovich'
+    developerEmail = 'vitalibof@gmail.com'
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
