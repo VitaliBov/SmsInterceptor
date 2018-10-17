@@ -118,4 +118,4 @@ Vitali Bovkunovich - vitalibof@gmail.com
 ## License
 
 - **[MIT license](https://github.com/VitaliBov/SmsInterceptor/blob/master/LICENSE)**
-- Copyright 2015 © <a href="https://github.com/VitaliBov" target="_blank">Vitali Bovkunovich</a>.
+- Copyright 2018 © <a href="https://github.com/VitaliBov" target="_blank">Vitali Bovkunovich</a>.
